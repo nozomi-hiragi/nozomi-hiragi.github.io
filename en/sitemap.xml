@@ -2,6 +2,33 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>/en/my-first-post/</loc><lastmod>2020-02-22T23:29:33&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="ja"
+                        href="/my-first-post/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="/en/my-first-post/"
+                    /></url><url>
+            <loc>/en/</loc><lastmod>2020-02-22T23:29:33&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="ja"
+                        href="/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="/en/"
+                    /></url><url>
+            <loc>/en/posts/</loc><lastmod>2020-02-22T23:29:33&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="ja"
+                        href="/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="/en/posts/"
+                    /></url><url>
             <loc>/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="ja"
@@ -10,15 +37,6 @@
                     rel="alternate"
                     hreflang="en"
                     href="/en/categories/"
-                    /></url><url>
-            <loc>/en/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="ja"
-                        href="/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="en"
-                    href="/en/"
                     /></url><url>
             <loc>/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"

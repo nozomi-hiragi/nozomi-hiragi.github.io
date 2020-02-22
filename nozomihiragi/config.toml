@@ -31,6 +31,11 @@ enableEmoji = true
     # Menu Info
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "https://nozomi-hiragi.hatenablog.com/"
+        weight = 1
+      [[languages.en.menu.main]]
         identifier = "posts"
         name = "Posts"
         url = "/posts/"
@@ -320,8 +325,13 @@ enableEmoji = true
     # メニュー情報
     [languagesja.menu]
       [[languages.ja.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "https://nozomi-hiragi.hatenablog.com/"
+        weight = 1
+      [[languages.ja.menu.main]]
         identifier = "posts"
-        name = "Post"
+        name = "Posts"
         url = "/posts/"
         weight = 1
       [[languages.ja.menu.main]]
@@ -470,16 +480,16 @@ enableEmoji = true
         enable = true
         Twitter = true
         Facebook = true
-        # Linkedin = true
-        # Whatsapp = true
-        # Pinterest = true
-        # Tumblr = true
+        Linkedin = true
+        Whatsapp = true
+        Pinterest = true
+        Tumblr = true
         # HackerNews = true
-        # Reddit = true
+        Reddit = true
         # VK = true
         # Buffer = true
         # Xing = true
-        # Line = true
+        Line = true
         # Instapaper = true
         # Pocket = true
         # Digg = true

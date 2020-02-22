@@ -2,6 +2,34 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>/my-first-post/</loc><lastmod>2020-02-22T23:29:33&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="/en/my-first-post/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ja"
+                    href="/my-first-post/"
+                    /></url><url>
+            <loc>/posts/</loc><lastmod>2020-02-22T23:29:33&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="/en/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ja"
+                    href="/posts/"
+                    /></url><url>
+            <loc>/about/</loc><lastmod>2020-02-22T22:33:26&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/</loc><lastmod>2020-02-22T22:33:26&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="/en/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="ja"
+                    href="/"
+                    /></url><url>
             <loc>/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -19,13 +47,4 @@
                     rel="alternate"
                     hreflang="ja"
                     href="/tags/"
-                    /></url><url>
-            <loc>/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="/en/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="ja"
-                    href="/"
                     /></url></urlset>

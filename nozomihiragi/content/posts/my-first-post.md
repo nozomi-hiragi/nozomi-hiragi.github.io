@@ -2,6 +2,8 @@
 title: "My First Post"
 date: 2020-02-22T23:29:33+09:00
 draft: false
+categories: ["日記"]
+tags: ["日記"]
 ---
 
 初投稿ども

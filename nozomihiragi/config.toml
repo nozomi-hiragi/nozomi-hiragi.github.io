@@ -1,7 +1,5 @@
 baseURL = "/"
-# [en, zh, ...] determines default content language
-defaultContentLanguage = "en"
-# theme
+defaultContentLanguage = "ja"
 theme = "LoveIt"
 
 publishDir = "../"
@@ -19,7 +17,7 @@ enableEmoji = true
     # language code
     languageCode = "en"
     # website title
-    title = "LoveIt Theme"
+    title = "Nozomi Hiragi"
     # whether to include chinese/japanese/korean
     hasCJKLanguage = false
     # default amount of posts in each pages
@@ -53,19 +51,19 @@ enableEmoji = true
         url = "/about/"
         weight = 4
       [[languages.en.menu.main]]
-        identifier = "zh"
+        identifier = "ja"
         pre = '<i class="fas fa-language fa-fw"></i>'
         name = ""
-        title = "简体中文"
-        url = "/zh/"
+        title = "日本語"
+        url = "../"
         weight = 5
       [languages.en.params]
         # LoveIt theme version
         version = "0.1.X"
         # site description
-        description = "About LoveIt Theme"
+        description = "Site about Hiragi Nozomi"
         # site keywords
-        keywords = ["Theme", "Hugo"]
+        keywords = ["nozomi", "hiragi"]
         # site default theme ("light", "dark", "auto")
         defaultTheme = "auto"
         # public git repo url to link lastmod git commit only then enableGitInfo is true
@@ -83,7 +81,7 @@ enableEmoji = true
           # ICP info only in China (HTML format is allowed)
           icp = ""
           # license info (HTML format is allowed)
-          license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+          # license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
         # Home Page Info
         [languages.en.params.home]
           # Home Page Profile
@@ -92,9 +90,9 @@ enableEmoji = true
             # Gravatar Email for preferred avatar in home page
             gravatarEmail = ""
             # URL of avatar shown in home page
-            avatarURL = "images/avatar.png"
+            avatarURL = "https://pbs.twimg.com/profile_images/1226024516884631555/YeKp7ZC8_400x400.jpg"
             # subtitle shown in home page
-            subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+            subtitle = "Site about Hiragi Nozomi"
             # whether to use typeit animation for subtitle
             typeit = true
             # whether to show social links
@@ -108,18 +106,18 @@ enableEmoji = true
             defaultHiddenFromHomePage = false
         # Social Info in home page
         [languages.en.params.social]
-          GitHub = "xxxx"
-          Linkedin = "xxxx"
-          Twitter = "xxxx"
-          Instagram = "xxxx"
-          Email = "xxxx@xxxx.com"
-          Facebook = "xxxx"
-          Telegram = "xxxx"
+          GitHub = "nozomi-hiragi"
+          # Linkedin = "xxxx"
+          Twitter = "nozomi_hilagi"
+          # Instagram = "xxxx"
+          # Email = "xxxx@xxxx.com"
+          # Facebook = "xxxx"
+          # Telegram = "xxxx"
           # Medium = "xxxx"
           # Gitlab = "xxxx"
-          Youtubelegacy = "xxxx"
+          # Youtubelegacy = "xxxx"
           # Youtubecustom = "xxxx"
-          # Youtubechannel = "xxxx"
+          Youtubechannel = "UCUWA9qRmV4VScrSaHaNBvog"
           # Tumblr ="xxxx"
           # Quora = "xxxx"
           # Keybase = "xxxx"
@@ -148,7 +146,7 @@ enableEmoji = true
           # Kickstarter = "xxxx"
           # Patreon = "xxxx"
           # Steam = "xxxx"
-          # Twitch = "xxxx"
+          Twitch = "nozomi_hiragi"
           # Strava = "xxxx"
           # Skype = "xxxx"
           # Whatsapp = "xxxx"
@@ -254,7 +252,7 @@ enableEmoji = true
           baidu = ""
         # Publisher Info just for SEO
         [languages.en.params.publisher]
-          name = "xxxx"
+          name = "nozomi hiragi"
           [languages.en.params.publisher.logo]
             url = "logo.png"
             width = 127
@@ -275,7 +273,7 @@ enableEmoji = true
           # Disqus Comment Config (https://disqus.com/)
           [languages.en.params.comment.disqus]
             # Disqus shortname to use Disqus in posts
-            shortname = "dillonzq"
+            # shortname = "nozomi hiragi"
           # Gittalk Comment Config (https://github.com/gitalk/gitalk)
           [languages.en.params.comment.gitalk]
             owner = ""
@@ -303,112 +301,112 @@ enableEmoji = true
             appId = ""
             languageCode = "en_US"
 
-  [languages.zh]
+  [languages.ja]
     weight = 2
-    # 网站语言
-    languageCode = "zh"
-    # 网站标题
-    title = "LoveIt 主题"
-    # 是否包括中日韩文字
+    # 言語コード
+    languageCode = "ja"
+    # ウェブサイトタイトル
+    title = "ひいらぎのぞみ"
+    # 日中韓を含むか
     hasCJKLanguage = true
-    # 默认每页列表显示的文章数目
+    # ページのデフォルト記事数
     paginate = 12
-    # [UA-XXXXXXXX-X] 谷歌分析代号
+    # [UA-XXXXXXXX-X] GAコード
     googleAnalytics = ""
-    # 版权描述，仅仅用于 SEO
+    # SEO向けコピーライト
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-    # 日期格式
+    # 日付形式
     dateFormatToUse = "2006-01-02"
-    # 菜单信息
-    [languages.zh.menu]
-      [[languages.zh.menu.main]]
+    # メニュー情報
+    [languagesja.menu]
+      [[languages.ja.menu.main]]
         identifier = "posts"
-        name = "文章"
+        name = "Post"
         url = "/posts/"
         weight = 1
-      [[languages.zh.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "tags"
-        name = "标签"
+        name = "Tags"
         url = "/tags/"
         weight = 2
-      [[languages.zh.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "categories"
-        name = "分类"
+        name = "Categories"
         url = "/categories/"
         weight = 3
-      [[languages.zh.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "about"
-        name = "关于"
+        name = "About"
         url = "/about/"
         weight = 4
-      [[languages.zh.menu.main]]
+      [[languages.ja.menu.main]]
         identifier = "en"
         pre = '<i class="fas fa-language fa-fw"></i>'
         name = ""
         title = "English"
-        url = "../"
+        url = "/en/"
         weight = 5
-    [languages.zh.params]
-      # LoveIt 主题版本
+    [languages.ja.params]
+      # LoveIt テーマバージョン
       version = "0.1.X"
-      # 网站描述
-      description = "关于 LoveIt 主题"
-      # 网站关键词
-      keywords = ["Theme", "Hugo"]
-      # 网站默认主题 ("light", "dark", "auto")
+      # サイトの説明
+      description = "ひいらぎのぞみについてのサイト"
+      # サイトのキーワード
+      keywords = ["のぞみ", "ひいらぎ"]
+      # サイトのデフォルトテーマ ("light", "dark", "auto")
       defaultTheme = "auto"
-      # 用于生成文章上次修改时间的公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+      # 生成に使用されるGitリポジトリへのパス　enableGitInfoがtrueだと反映する
       gitRepo = ""
-      # 页面头部导航栏信息
-      [languages.zh.params.header]
-        # 桌面端导航栏模式 ("fixed", "normal", "auto")
+      # ヘッダページのナビ情報
+      [languages.ja.params.header]
+        # デスクトップナビモード ("fixed", "normal", "auto")
         desktopMode = "fixed"
-        # 移动端导航栏模式 ("fixed", "normal", "auto")
+        # モバイルナビモード ("fixed", "normal", "auto")
         mobileMode = "auto"
-      # 页面底部版权信息设置
-      [languages.zh.params.footer]
-        # 网站创立年份
-        since = 2019
-        # ICP 备案信息，仅在中国使用 (允许使用 HTML 格式)
+      # フッターのコピラ情報
+      [languages.ja.params.footer]
+        # サイト作成年
+        since = 2020
+        # ICP情報 中国のみ必要 (HTML形式使用可能)
         icp = ""
-        # 许可协议信息 (允许使用 HTML 格式)
-        license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
-      # 主页信息设置
-      [languages.zh.params.home]
-        # 主页个人信息
-        [languages.zh.params.home.profile]
+        # ライセンス情報 (HTML形式使用可能)
+        #license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+      # ホームの設定
+      [languages.ja.params.home]
+        # プロフィール
+        [languages.ja.params.home.profile]
           enable = true
-          # Gravatar 邮箱，用于优先在主页显示的头像
+          # Gravatar メール
           gravatarEmail = ""
-          # 主页显示头像的 URL
-          avatarURL = "images/avatar.png"
-          # 主页显示的网站副标题
-          subtitle = "一个简洁、优雅且高效的 Hugo 主题"
-          # 是否为副标题显示打字机动画
+          # アバターURL
+          avatarURL = "https://pbs.twimg.com/profile_images/1134100458748821509/hHlgs9wt_400x400.jpg"
+          # サブタイトル
+          subtitle = "ひいらぎぞのみについてのサイト"
+          # タイプライターアニメ
           typeit = true
-          # 是否显示社交账号
+          # ソーシャルアカウント表示
           social = true
-        # 主页文章列表
-        [languages.zh.params.home.posts]
+        # 投稿一覧
+        [languages.ja.params.home.posts]
           enable = true
-          # 主页每页显示文章数量
+          # 投稿のページ数
           paginate = 6
-          # 当你没有在文章前面设置 "hiddenFromHomePage" 时的默认行为
+          # "hiddenFromHomePage"を設定してないときのデフォルト設定
           defaultHiddenFromHomePage = false
-      # 主页的社交信息设置
-      [languages.zh.params.social]
-        GitHub = "xxxx"
+      # ソーシャル設定
+      [languages.ja.params.social]
+        GitHub = "nozomi-hiragi"
         # Linkedin = "xxxx"
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Email = "xxxx@example.com"
+        Twitter = "nozomi_hiragi"
+        # Instagram = "xxxx"
+        # Email = "xxxx@example.com"
         # Facebook = "xxxx"
         # Telegram = "xxxx"
         # Medium = "xxxx"
         # Gitlab = "xxxx"
         # Youtubelegacy = "xxxx"
         # Youtubecustom = "xxxx"
-        # Youtubechannel = "xxxx"
+        Youtubechannel = "UCUWA9qRmV4VScrSaHaNBvog"
         # Tumblr ="xxxx"
         # Quora = "xxxx"
         # Keybase = "xxxx"
@@ -418,7 +416,7 @@ enableEmoji = true
         # FreeCodeCamp = "xxxx"
         # Bitbucket = "xxxx"
         # Stackoverflow = "xxxx"
-        Weibo = "xxxx"
+        # Weibo = "xxxx"
         # Odnoklassniki = "xxxx"
         # VK = "xxxx"
         # Flickr = "xxxx"
@@ -436,12 +434,12 @@ enableEmoji = true
         # Hackernews = "xxxx"
         # Kickstarter = "xxxx"
         # Patreon = "xxxx"
-        Steam = "xxxx"
-        # Twitch = "xxxx"
+        # Steam = "xxxx"
+        Twitch = "nozomi_hiragi"
         # Strava = "xxxx"
         # Skype = "xxxx"
         # Whatsapp = "xxxx"
-        Zhihu = "xxxx"
+        # Zhihu = "xxxx"
         # Douban = "xxxx"
         # Angellist = "xxxx"
         # Slidershare = "xxxx"
@@ -460,15 +458,15 @@ enableEmoji = true
         # Gitea = "xxxx"
         # XMPP = "xxxx@example.com"
         # Matrix = "xxxx"
-        Bilibili = "xxxx"
-      # 文章页面配置
-      [languages.zh.params.page]
-        # 在文章页面是否使用分享功能
+        # Bilibili = "xxxx"
+      # 記事
+      [languages.ja.params.page]
+        # 記事のシェア
         socialShare = true
-        # 是否在文章页面显示原始 Markdown 文档链接
+        # マークダウンのリンク
         linkToMarkdown = true
-      # 文章页面的分享信息设置
-      [languages.zh.params.share]
+      # 記事のシェア
+      [languages.ja.params.share]
         enable = true
         Twitter = true
         Facebook = true
@@ -498,21 +496,21 @@ enableEmoji = true
         # Trello = true
         # Mix = true
       # 数学公式 (KaTeX https://katex.org/)
-      [languages.zh.params.math]
+      [languages.ja.params.math]
         enable = true
-        # 默认内联定界符是 $ ... $ 和 \\( ... \\)
+        # デフォルのインライン区切り $ ... $ And \\( ... \\)
         inlineLeftDelimiter = ""
         inlineRightDelimiter = ""
-        # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
+        # デフォルトのブロック区切り $$ ... $$ And \\[ ... \\]
         blockLeftDelimiter = ""
         blockRightDelimiter = ""
-        # KaTeX 插件 copy_tex
+        # KaTeX プラグイン copy_tex
         copyTex = true
-        # KaTeX 插件 mhchem
+        # KaTeX プラグイン mhchem
         mhchem = true
-      # CSS 和 JS 文件的 CDN 设置
-      [languages.zh.params.cdn]
-        ## 例如 '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
+      # CSSとJSファイルのCDN設定
+      [languages.ja.params.cdn]
+        ## 例 '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.1/css/all.min.css" integrity="sha256-fdcFNFiBMrNfWL6OcAGQz6jDgNTRxnrLEd4vJYFWScE=" crossorigin="anonymous">'
         fontawesomeFreeCSS = ''
         animateCSS = ''
         gitalkCSS = ''
@@ -534,49 +532,49 @@ enableEmoji = true
         aplayerCSS = ''
         aplayerJS = ''
         metingJS = ''
-      # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
-      [languages.zh.params.verification]
+      # サイトの確認コード Google/Bing/Yandex/Pinterest/Baidu
+      [languages.ja.params.verification]
         google = ""
         bing = ""
         yandex = ""
         pinterest = ""
         baidu = ""
-      # 出版者信息，仅用于 SEO
-      [languages.zh.params.publisher]
-        name = "xxxx"
-        [languages.zh.params.publisher.logo]
+      # SEO向けパブリッシャ情報
+      [languages.ja.params.publisher]
+        name = "ひいらぎのぞみ"
+        [languages.ja.params.publisher.logo]
           url = "logo.png"
           width = 127
           height = 40
-      # 网站图标信息，仅用于 SEO
-      [languages.zh.params.logo]
+      # SEO向けアイコン情報
+      [languages.ja.params.logo]
         url = "logo.png"
         width = 127
         height = 40
-      #  网站图标信息，仅用于 SEO
-      [languages.zh.params.image]
+      # SEO向けアイコン情報
+      [languages.ja.params.image]
         url = "cover.png"
         width = 800
         height = 600
-      # 评论系统设置
-      [languages.zh.params.comment]
+      # コメントの設定
+      [languages.ja.params.comment]
         enable = true
-        # Disqus 评论系统设置 (https://disqus.com/)
-        [languages.zh.params.comment.disqus]
-          # Disqus 的用户名，用来在文章中启用 Disqus 评论系统
-          shortname = "dillonzq"
-        # Gittalk 评论系统设置 (https://github.com/gitalk/gitalk)
-        [languages.zh.params.comment.gitalk]
+        # Disqus コメント設定 (https://disqus.com/)
+        [languages.ja.params.comment.disqus]
+          # Disqus用のショートネーム
+          # shortname = "ひいらぎのぞみ"
+        # Gittalk コメント設定 (https://github.com/gitalk/gitalk)
+        [languages.ja.params.comment.gitalk]
           owner = ""
           repo = ""
           clientId = ""
           clientSecret = ""
-        # Valine 评论系统设置 (https://github.com/xCss/Valine)
-        [languages.zh.params.comment.valine]
+        # Valine コメント設定 (https://github.com/xCss/Valine)
+        [languages.ja.params.comment.valine]
           enable = false
           appId = ""
           appKey = ""
-          placeholder = "你的评论 ..."
+          placeholder = "あなたのコメント ..."
           notify = false
           verify = true
           avatar = "mp"
@@ -584,8 +582,8 @@ enableEmoji = true
           pageSize = 10
           visitor = true
           recordIP = true
-        # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
-        [languages.zh.params.comment.facebook]
+        # Facebook コメント設定 (https://developers.facebook.com/docs/plugins/comments)
+        [languages.ja.params.comment.facebook]
           enable = false
           width = "100%"
           numPosts = 10
@@ -624,7 +622,7 @@ enableEmoji = true
 
 # Author Info
 [author]
-  name = "xxxx"
+  name = "ひいらぎぞのみ"
   link = ""
 
 # Sitemap Info

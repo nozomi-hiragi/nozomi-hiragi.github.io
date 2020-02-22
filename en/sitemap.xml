@@ -2,30 +2,30 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>/en/categories/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
-                        hreflang="zh"
-                        href="/zh/categories/"
+                        hreflang="ja"
+                        href="/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="/categories/"
+                    href="/en/categories/"
                     /></url><url>
-            <loc>/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>/en/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
-                        hreflang="zh"
-                        href="/zh/"
+                        hreflang="ja"
+                        href="/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="/"
+                    href="/en/"
                     /></url><url>
-            <loc>/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>/en/tags/</loc><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
-                        hreflang="zh"
-                        href="/zh/tags/"
+                        hreflang="ja"
+                        href="/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="en"
-                    href="/tags/"
+                    href="/en/tags/"
                     /></url></urlset>

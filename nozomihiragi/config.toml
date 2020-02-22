@@ -4,7 +4,7 @@ defaultContentLanguage = "en"
 # theme
 theme = "LoveIt"
 
-publishDir = "docs"
+publishDir = "../"
 
 # whether to use robots.txt
 enableRobotsTXT = true

@@ -1,0 +1,12 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "server": "http-server ./doc"
+  },
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

@@ -45,15 +45,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/profile_image_en.jpg
-    - assets/profile_image_jp.jpg
-    - assets/profile_image_ko.jpg
-    - assets/zenn.svg
-    - assets/booth.svg
-    - assets/pixivfanbox.svg
-    - assets/hatenablog.svg
-    - assets/icon_vrcmate.png
-    - assets/icon_kemonono.png
+    - images/profile_image_en.jpg
+    - images/profile_image_jp.jpg
+    - images/profile_image_ko.jpg
+    - images/zenn.svg
+    - images/booth.svg
+    - images/pixivfanbox.svg
+    - images/hatenablog.svg
+    - images/icon_vrcmate.png
+    - images/icon_kemonono.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

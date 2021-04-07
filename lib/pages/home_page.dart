@@ -30,11 +30,11 @@ class HomePage extends StatelessWidget {
         tooltip: 'GitHub',
         url: 'https://github.com/nozomi-hiragi'),
     IconButtonParams(
-        icon: WebsafeSvg.asset('zenn.svg', color: Color(0xFF3EA8FF)),
+        icon: WebsafeSvg.asset('images/zenn.svg', color: Color(0xFF3EA8FF)),
         tooltip: 'Zenn',
         url: 'https://zenn.dev/nozomi_hiragi'),
     IconButtonParams(
-        icon: WebsafeSvg.asset('hatenablog.svg', color: Colors.black),
+        icon: WebsafeSvg.asset('images/hatenablog.svg', color: Colors.black),
         tooltip: 'Hatena Blog',
         url: 'https://nozomi-hiragi.hatenablog.com'),
     IconButtonParams(
@@ -54,11 +54,12 @@ class HomePage extends StatelessWidget {
         tooltip: 'Twitch',
         url: 'https://www.twitch.tv/nozomi_hiragi'),
     IconButtonParams(
-        icon: WebsafeSvg.asset('booth.svg', color: Color(0xFFFC4D50)),
+        icon: WebsafeSvg.asset('images/booth.svg', color: Color(0xFFFC4D50)),
         tooltip: 'BOOTH',
         url: 'https://nozomi-hiragi.booth.pm'),
     IconButtonParams(
-        icon: WebsafeSvg.asset('pixivfanbox.svg', color: Color(0xff000000)),
+        icon: WebsafeSvg.asset('images/pixivfanbox.svg',
+            color: Color(0xff000000)),
         tooltip: 'PIXIV FANBOX',
         url: 'https://nozomi-hiragi.booth.pm'),
     IconButtonParams(
@@ -225,7 +226,7 @@ class HomePage extends StatelessWidget {
                             children: [
                               buildProductWidget(
                                 title: 'VRCMate',
-                                iconName: 'icon_vrcmate.png',
+                                iconName: 'images/icon_vrcmate.png',
                                 url: 'https://twitter.com/hashtag/VRCMate',
                                 children: [
                                   Text('VRChatのフレンドを確認できるアプリ'),
@@ -233,7 +234,7 @@ class HomePage extends StatelessWidget {
                               ),
                               buildProductWidget(
                                 title: 'けものの',
-                                iconName: 'icon_kemonono.png',
+                                iconName: 'images/icon_kemonono.png',
                                 url:
                                     'https://play.google.com/store/apps/details?id=com.noxon.kemononofree',
                                 children: [
@@ -315,17 +316,17 @@ class Header extends GetView<HomeController> {
                     children: [
                       createProfileSet(
                         name: 'Nozomi Hiragi',
-                        image: 'profile_image_en.jpg',
+                        image: 'images/profile_image_en.jpg',
                         twitterId: 'nozomi_hilagi',
                       ),
                       createProfileSet(
                         name: 'ひいらぎ のぞみ',
-                        image: 'profile_image_jp.jpg',
+                        image: 'images/profile_image_jp.jpg',
                         twitterId: 'nozomi_hiragi',
                       ),
                       createProfileSet(
                         name: '히이라기 노조미',
-                        image: 'profile_image_ko.jpg',
+                        image: 'images/profile_image_ko.jpg',
                         twitterId: 'nojomi_hiragi',
                       ),
                     ],

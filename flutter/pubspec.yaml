@@ -51,6 +51,9 @@ flutter:
     - assets/zenn.svg
     - assets/booth.svg
     - assets/pixivfanbox.svg
+    - assets/hatenablog.svg
+    - assets/icon_vrcmate.png
+    - assets/icon_kemonono.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

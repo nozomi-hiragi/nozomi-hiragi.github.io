@@ -157,21 +157,18 @@ class HomePage extends StatelessWidget {
           Header(isMobile: isMobile),
           Padding(
             padding: const EdgeInsets.all(16),
-            child: Expanded(
-              child: Wrap(
-                alignment: isTablet
-                    ? WrapAlignment.spaceBetween
-                    : WrapAlignment.center,
-                spacing: 16,
-                children: iconButtonParams
-                    .map((e) => IconButton(
-                          icon: e.icon,
-                          tooltip: e.tooltip,
-                          onPressed: () => launchUrl(e.url),
-                          iconSize: isMobile ? 46 : 64,
-                        ))
-                    .toList(),
-              ),
+            child: Wrap(
+              alignment:
+                  isTablet ? WrapAlignment.spaceBetween : WrapAlignment.center,
+              spacing: 16,
+              children: iconButtonParams
+                  .map((e) => IconButton(
+                        icon: e.icon,
+                        tooltip: e.tooltip,
+                        onPressed: () => launchUrl(e.url),
+                        iconSize: isMobile ? 46 : 64,
+                      ))
+                  .toList(),
             ),
           ),
           Padding(

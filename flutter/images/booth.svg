@@ -1,8 +1,0 @@
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
-  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
-  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <g transform="matrix(0.7,0,0,-0.7,21,9)">
-    <path id="path28" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-      d="m 0,0 v 2.484 l -6.21,9.935 h -2.145 l -3.387,-8.128 -3.331,6.997 -1.864,0.003 -5.643,-13.323 v 12.645 h -3.84 V 9.495 h -2.934 V 5.6 h 2.934 V -5.645 c 0,-0.997 0.81,-1.806 1.808,-1.806 h 1.919 v -12.395 l 3.917,0.002 c 0,0 0.001,5.605 0.001,5.611 0,3.109 2.69,5.631 6.017,5.652 h 0.037 0.002 0.002 0.005 c 5.441,-0.003 9.852,-4.12 9.852,-9.197 v -2.068 H 0 v 11.12 h 2.935 v 6.147 z" />
-  </g>
-</svg>

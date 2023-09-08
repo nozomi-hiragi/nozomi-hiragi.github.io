@@ -3,6 +3,7 @@ import NameTile from "@/tiles/NameTile";
 import AccountsTile from "@/tiles/AccountsTile";
 import LanguagesTile from "@/tiles/LanguagesTile";
 import FrameworksTile from "@/tiles/FrameworksTile";
+import ProductsTile from "@/tiles/ProductsTile";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <AccountsTile />
         <LanguagesTile />
         <FrameworksTile />
+        <ProductsTile />
       </Flex>
     </main>
   );

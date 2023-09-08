@@ -38,6 +38,24 @@ const accounts = [
     url: "https://twitter.com/nojomi_hiragi",
   },
   {
+    label: "nozomi hiragi",
+    gradient: { from: "rgb(8,8,8)", to: "gray", deg: 110 },
+    icon: "threads",
+    url: "https://www.threads.net/@nozomi_hiragi",
+  },
+  {
+    label: "ひいらぎのぞみ🍇nozomi hiragi",
+    gradient: { from: "rgb(43,144,217)", to: "blue", deg: 110 },
+    icon: "mastodon",
+    url: "https://mstdn.jp/@hiragi",
+  },
+  {
+    label: "ひいらぎのぞみ@開発関連",
+    gradient: { from: "green", to: "lime", deg: 110 },
+    icon: "misskey",
+    url: "https://misskey.io/@nozomi_hiragi",
+  },
+  {
     label: "Twitch",
     gradient: { from: "rgb(90,62,133)", to: "violet", deg: 110 },
     icon: "twitch",

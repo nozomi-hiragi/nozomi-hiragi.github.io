@@ -1,14 +1,6 @@
-import {
-  ActionIcon,
-  ActionIconProps,
-  Flex,
-  Group,
-  Text,
-  Tooltip,
-  TooltipProps,
-} from "@mantine/core";
+import { ActionIcon, ActionIconProps, Flex, Group } from "@mantine/core";
 import { getIcon } from "@/components/Icons";
-import RandomToolTip from "./RandomTooltip";
+import RandomToolTip from "../components/RandomTooltip";
 
 const AccountActionIcon = (
   props: ActionIconProps & { children: React.ReactNode; href?: string },

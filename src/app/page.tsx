@@ -1,8 +1,8 @@
 import { Flex } from "@mantine/core";
-import NameTile from "@/components/NameTile";
-import AccountsTile from "@/components/AccountsTile";
-import LanguagesTile from "@/components/LanguagesTile";
-import FrameworksTile from "@/components/FrameworksTile";
+import NameTile from "@/tiles/NameTile";
+import AccountsTile from "@/tiles/AccountsTile";
+import LanguagesTile from "@/tiles/LanguagesTile";
+import FrameworksTile from "@/tiles/FrameworksTile";
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+import { Product } from "@/models";
 import {
   Button,
   Card,
@@ -9,73 +10,7 @@ import {
   Title,
 } from "@mantine/core";
 
-type ProductLink = {
-  label: string;
-  url: string;
-  color?: string;
-};
-type Product = {
-  name: string;
-  description: string;
-  tags?: string[];
-  links?: ProductLink[];
-};
-
-const products: Product[] = [{
-  name: "Yowatari",
-  description: "VRChat world explorer",
-  tags: ["React", "Deno", "Next.js", "Mantine", "TypeScript"],
-  links: [{
-    label: "Website",
-    url: "https://yowatari.link/",
-    color: "green.9",
-  }],
-}, {
-  name: "EbinaStation",
-  description: "Server application manager",
-  tags: ["React", "Deno", "Next.js", "Mantine", "TypeScript"],
-  links: [{
-    label: "Repository",
-    url: "https://github.com/nozomi-hiragi/ebina-station",
-  }, {
-    label: "Website",
-    url: "https://nozomi-hiragi.github.io/ebina-station/",
-  }],
-}, {
-  name: "TweetHistory",
-  description: "Tweet archive viewing and grouping tool",
-  tags: ["React", "Next.js", "Mantine", "TypeScript"],
-  links: [{
-    label: "Repository",
-    url: "https://github.com/nozomi-hiragi/TweetHistory/",
-  }, {
-    label: "Website",
-    url: "https://nozomi-hiragi.github.io/TweetHistory/",
-  }],
-}, {
-  name: "Tansaku",
-  description: "Flutter Web demo",
-  tags: ["Flutter", "Dart"],
-  links: [{
-    label: "Repository",
-    url: "https://github.com/nozomi-hiragi/Tansaku",
-  }, {
-    label: "Website",
-    url: "https://nozomi-hiragi.github.io/Tansaku",
-  }],
-}, {
-  name: "VRCMate",
-  description: "VRChat friends status checker",
-  tags: ["Android", "Kotlin"],
-  links: [{
-    label: "Vestige",
-    url:
-      "https://twitter.com/search?q=%23VRCMate%20from%3Anozomi_hiragi&f=live",
-    color: "violet",
-  }],
-}];
-
-const ProductsTile = () => {
+const ProductsTile = ({ products }: { products: Product[] }) => {
   return (
     <Flex
       h="100vh"

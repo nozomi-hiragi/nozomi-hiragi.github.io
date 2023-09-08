@@ -1,22 +1,7 @@
 import { Card, Flex, Group, Rating, Title } from "@mantine/core";
+import { Framework } from "@/models";
 
-const frameworks = [
-  { name: "Deno", rate: 4.8 },
-  { name: "Node.js", rate: 4 },
-  { name: "React", rate: 4.5 },
-  { name: "Mantie", rate: 4.5 },
-  { name: "Next.js", rate: 4 },
-  { name: "Flutter", rate: 3 },
-  { name: "Android", rate: 2.4 },
-  { name: "Godot", rate: 2 },
-  { name: "DirectX 9", rate: 2.8 },
-  { name: "DirectX 11", rate: 2.3 },
-  { name: "DirectX 12", rate: 2 },
-  { name: "Vulkan", rate: 2 },
-  { name: "Unity", rate: 1 },
-];
-
-const FrameworksTile = () => {
+const FrameworksTile = ({ frameworks }: { frameworks: Framework[] }) => {
   return (
     <Flex
       h="100vh"

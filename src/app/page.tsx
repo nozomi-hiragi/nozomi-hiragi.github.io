@@ -4,6 +4,7 @@ import AccountsTile from "@/tiles/AccountsTile";
 import LanguagesTile from "@/tiles/LanguagesTile";
 import FrameworksTile from "@/tiles/FrameworksTile";
 import ProductsTile from "@/tiles/ProductsTile";
+import LastTile from "@/tiles/LastTile";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <LanguagesTile />
         <FrameworksTile />
         <ProductsTile />
+        <LastTile />
       </Flex>
     </main>
   );

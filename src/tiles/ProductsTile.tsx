@@ -87,19 +87,20 @@ const ProductsTile = () => {
     >
       <Group gap={50} style={{ flexWrap: "nowrap" }}>
         {products.map((product) => (
-          <Card miw={260}>
+          <Card key={product.name} miw={260}>
             <Stack>
               <Title order={3}>{product.name}</Title>
               <Text>{product.description}</Text>
               {product.tags && (
                 <Flex gap="xs" wrap="wrap">
-                  {product.tags.map((tag) => <Pill>{tag}</Pill>)}
+                  {product.tags.map((tag) => <Pill key={tag}>{tag}</Pill>)}
                 </Flex>
               )}
               {product.links && (
                 <Group justify="flex-end">
                   {product.links.map((link) => (
                     <Button
+                      key={link.label}
                       component="a"
                       target="_blank"
                       href={link.url}

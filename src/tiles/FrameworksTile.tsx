@@ -28,7 +28,7 @@ const FrameworksTile = () => {
     >
       <Group gap={50} style={{ flexWrap: "nowrap" }}>
         {frameworks.map((framework) => (
-          <Card>
+          <Card key={framework.name}>
             <Title order={5}>{framework.name}</Title>
             <Rating readOnly fractions={10} value={framework.rate} />
           </Card>

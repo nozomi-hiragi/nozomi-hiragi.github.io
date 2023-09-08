@@ -137,6 +137,7 @@ const AccountsTile = () => {
       <Group gap={50} style={{ flexWrap: "nowrap" }}>
         {accounts.map((account) => (
           <RandomToolTip
+            key={account.label}
             label={account.label}
           >
             <AccountActionIcon

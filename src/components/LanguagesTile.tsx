@@ -23,7 +23,7 @@ const LanguagesTile = () => {
   return (
     <Flex
       h="100vh"
-      bg="gray"
+      bg="lime.9"
       px={80}
       py={50}
       align="center"

@@ -1,0 +1,388 @@
+{
+  "accounts": [
+    {
+      "label": "ひいらぎのぞみ",
+      "icon": "twitter",
+      "gradient": {
+        "from": "teal",
+        "to": "blue",
+        "deg": 90
+      },
+      "url": "https://twitter.com/nozomi_hiragi"
+    },
+    {
+      "label": "Nozomi Hiragi",
+      "gradient": {
+        "from": "blue",
+        "to": "violet",
+        "deg": 90
+      },
+      "icon": "twitter",
+      "url": "https://twitter.com/nozomi_hilagi"
+    },
+    {
+      "label": "히라기 노조미",
+      "gradient": {
+        "from": "violet",
+        "to": "pink",
+        "deg": 90
+      },
+      "icon": "twitter",
+      "url": "https://twitter.com/nojomi_hiragi"
+    },
+    {
+      "label": "nozomi hiragi",
+      "gradient": {
+        "from": "rgb(8,8,8)",
+        "to": "gray",
+        "deg": 110
+      },
+      "icon": "threads",
+      "url": "https://www.threads.net/@nozomi_hiragi"
+    },
+    {
+      "label": "ひいらぎのぞみ🍇nozomi hiragi",
+      "gradient": {
+        "from": "rgb(43,144,217)",
+        "to": "blue",
+        "deg": 110
+      },
+      "icon": "mastodon",
+      "url": "https://mstdn.jp/@hiragi"
+    },
+    {
+      "label": "ひいらぎのぞみ@開発関連",
+      "gradient": {
+        "from": "green",
+        "to": "lime",
+        "deg": 110
+      },
+      "icon": "misskey",
+      "url": "https://misskey.io/@nozomi_hiragi"
+    },
+    {
+      "label": "Twitch",
+      "gradient": {
+        "from": "rgb(90,62,133)",
+        "to": "violet",
+        "deg": 110
+      },
+      "icon": "twitch",
+      "url": "https://www.twitch.tv/nozomi_hiragi"
+    },
+    {
+      "label": "Re:nozomi hiragi",
+      "gradient": {
+        "from": "violet.9",
+        "to": "indigo.8",
+        "deg": 100
+      },
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCGfXzcqUc7pn8f1WQ-zk6zA"
+    },
+    {
+      "label": "ひいらぎのぞみの趣味",
+      "gradient": {
+        "from": "orange.6",
+        "to": "yellow.7",
+        "deg": 110
+      },
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCi5z7odZ5FzDQIMi1pT5q0g"
+    },
+    {
+      "label": "Nozomi from Japan",
+      "gradient": {
+        "from": "green",
+        "to": "lime.6",
+        "deg": 110
+      },
+      "icon": "youtube",
+      "url": "https://www.youtube.com/channel/UCb2KFFsK2387E594oc_xYFA"
+    },
+    {
+      "label": "GitHub",
+      "gradient": {
+        "from": "dark",
+        "to": "gray",
+        "deg": 90
+      },
+      "icon": "github",
+      "url": "https://github.com/nozomi-hiragi"
+    },
+    {
+      "label": "Hatena Blog",
+      "gradient": {
+        "from": "gray.0",
+        "to": "gray.2",
+        "deg": 110
+      },
+      "icon": "hatenablog",
+      "url": "https://nozomi-hiragi.hatenablog.com/"
+    },
+    {
+      "label": "Zenn",
+      "gradient": {
+        "from": "rgb(62,168,255)",
+        "to": "blue",
+        "deg": 110
+      },
+      "icon": "zenn",
+      "url": "https://zenn.dev/nozomi_hiragi"
+    },
+    {
+      "label": "Booth",
+      "gradient": {
+        "from": "red",
+        "to": "orange",
+        "deg": 110
+      },
+      "icon": "booth",
+      "url": "https://nozomi-hiragi.booth.pm/"
+    },
+    {
+      "label": "Fanbox",
+      "gradient": {
+        "from": "rgb(35,24,22)",
+        "to": "rgb(43,51,60)",
+        "deg": 110
+      },
+      "icon": "fanbox",
+      "url": "https://nozomi-hiragi.fanbox.cc/"
+    },
+    {
+      "label": "Patreon",
+      "gradient": {
+        "from": "rgb(255,66,77)",
+        "to": "red",
+        "deg": 110
+      },
+      "icon": "patreon",
+      "url": "https://www.patreon.com/nozomi_hiragi"
+    },
+    {
+      "label": "Amazon Wishlist",
+      "gradient": {
+        "from": "rgb(254, 156, 21)",
+        "to": "yellow",
+        "deg": 110
+      },
+      "icon": "amazon",
+      "url": "https://www.amazon.co.jp/registry/wishlist/RSOGC7R8DVLP/ref=cm_sw_r_cp_ep_ws_-Y-5Bb04SS5P4"
+    }
+  ],
+  "languages": [
+    {
+      "name": "C++",
+      "rate": 3.2
+    },
+    {
+      "name": "Dart",
+      "rate": 3.5
+    },
+    {
+      "name": "Java",
+      "rate": 3.5
+    },
+    {
+      "name": "Kotlin",
+      "rate": 3.4
+    },
+    {
+      "name": "Golang",
+      "rate": 3.3
+    },
+    {
+      "name": "Rust",
+      "rate": 3
+    },
+    {
+      "name": "TypeScript",
+      "rate": 4.3
+    },
+    {
+      "name": "JavaScript",
+      "rate": 2.4
+    },
+    {
+      "name": "C#",
+      "rate": 2
+    },
+    {
+      "name": "HTML",
+      "rate": 2.8
+    },
+    {
+      "name": "CSS",
+      "rate": 2.2
+    },
+    {
+      "name": "Python",
+      "rate": 0.5
+    },
+    {
+      "name": "PHP",
+      "rate": 0.3
+    },
+    {
+      "name": "日本語",
+      "rate": 4.8
+    },
+    {
+      "name": "English",
+      "rate": 3.2
+    },
+    {
+      "name": "한국어",
+      "rate": 1.8
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Deno",
+      "rate": 4.8
+    },
+    {
+      "name": "Node.js",
+      "rate": 4
+    },
+    {
+      "name": "React",
+      "rate": 4.5
+    },
+    {
+      "name": "Mantie",
+      "rate": 4.5
+    },
+    {
+      "name": "Next.js",
+      "rate": 4
+    },
+    {
+      "name": "Flutter",
+      "rate": 3
+    },
+    {
+      "name": "Android",
+      "rate": 2.4
+    },
+    {
+      "name": "Godot",
+      "rate": 2
+    },
+    {
+      "name": "DirectX 9",
+      "rate": 2.8
+    },
+    {
+      "name": "DirectX 11",
+      "rate": 2.3
+    },
+    {
+      "name": "DirectX 12",
+      "rate": 2
+    },
+    {
+      "name": "Vulkan",
+      "rate": 2
+    },
+    {
+      "name": "Unity",
+      "rate": 1
+    }
+  ],
+  "products": [
+    {
+      "name": "Yowatari",
+      "description": "VRChat world explorer",
+      "tags": [
+        "React",
+        "Deno",
+        "Next.js",
+        "Mantine",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://yowatari.link/",
+          "color": "green.9"
+        }
+      ]
+    },
+    {
+      "name": "EbinaStation",
+      "description": "Server application manager",
+      "tags": [
+        "React",
+        "Deno",
+        "Next.js",
+        "Mantine",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/nozomi-hiragi/ebina-station"
+        },
+        {
+          "label": "Website",
+          "url": "https://nozomi-hiragi.github.io/ebina-station/"
+        }
+      ]
+    },
+    {
+      "name": "TweetHistory",
+      "description": "Tweet archive viewing and grouping tool",
+      "tags": [
+        "React",
+        "Next.js",
+        "Mantine",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/nozomi-hiragi/TweetHistory/"
+        },
+        {
+          "label": "Website",
+          "url": "https://nozomi-hiragi.github.io/TweetHistory/"
+        }
+      ]
+    },
+    {
+      "name": "Tansaku",
+      "description": "Flutter Web demo",
+      "tags": [
+        "Flutter",
+        "Dart"
+      ],
+      "links": [
+        {
+          "label": "Repository",
+          "url": "https://github.com/nozomi-hiragi/Tansaku"
+        },
+        {
+          "label": "Website",
+          "url": "https://nozomi-hiragi.github.io/Tansaku"
+        }
+      ]
+    },
+    {
+      "name": "VRCMate",
+      "description": "VRChat friends status checker",
+      "tags": [
+        "Android",
+        "Kotlin"
+      ],
+      "links": [
+        {
+          "label": "Vestige",
+          "url": "https://twitter.com/search?q=%23VRCMate%20from%3Anozomi_hiragi&f=live",
+          "color": "violet"
+        }
+      ]
+    }
+  ]
+}

@@ -13,7 +13,7 @@ const LanguagesTile = ({ languages }: { languages: Language[] }) => {
     >
       <Group gap={50} style={{ flexWrap: "nowrap" }}>
         {languages.map((language) => (
-          <Card key={language.name}>
+          <Card key={language.name} miw={130}>
             <Title order={5}>{language.name}</Title>
             <Rating readOnly fractions={10} value={language.rate} />
           </Card>

@@ -209,6 +209,14 @@
       "rate": 2
     },
     {
+      "name": "Swift",
+      "rate": 1.7
+    },
+    {
+      "name": "Objective-C",
+      "rate": 1.3
+    },
+    {
       "name": "HTML",
       "rate": 2.8
     },
@@ -285,6 +293,10 @@
     {
       "name": "Vulkan",
       "rate": 2
+    },
+    {
+      "name": "Blender",
+      "rate": 3
     },
     {
       "name": "Unity",

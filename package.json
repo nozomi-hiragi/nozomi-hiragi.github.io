@@ -22,7 +22,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.7.0",
     "postcss-simple-vars": "^7.0.1"
   }

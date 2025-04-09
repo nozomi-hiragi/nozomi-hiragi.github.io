@@ -31,6 +31,16 @@
       "url": "https://twitter.com/nojomi_hiragi"
     },
     {
+      "label": "ひいらぎのぞみ",
+      "gradient": {
+        "from": "#FF79A1",
+        "to": "#FF9A00",
+        "deg": 130
+      },
+      "icon": "mixi2",
+      "url": "https://mixi.social/@nozomi_hiragi"
+    },
+    {
       "label": "nozomi hiragi",
       "gradient": {
         "from": "rgb(8,8,8)",
@@ -69,6 +79,16 @@
       },
       "icon": "twitch",
       "url": "https://www.twitch.tv/nozomi_hiragi"
+    },
+    {
+      "label": "nozomi hiragi",
+      "gradient": {
+        "from": "red",
+        "to": "orange",
+        "deg": 110
+      },
+      "icon": "youtube",
+      "url": "https://www.youtube.com/@nozomi_hiragi_vt"
     },
     {
       "label": "Re:nozomi hiragi",

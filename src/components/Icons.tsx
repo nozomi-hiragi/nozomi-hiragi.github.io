@@ -1,5 +1,19 @@
 import { JSX } from "react";
 
+export const IconUser = ({ size }: { size: number }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+    <path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+  </svg>
+);
+
 export const IconAmazon = ({ size }: { size: number }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +88,7 @@ export const IconMastodon = ({ size }: { size: number }) => (
     viewBox="0 0 216.4144 232.00976"
   >
     <mask id="m">
-      <rect width="216" height="232" fill="#fff"/>
+      <rect width="216" height="232" fill="#fff" />
       <path
         fill="#000"
         d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675"
@@ -118,6 +132,19 @@ export const IconHatenaBlog = ({ size }: { size: number }) => (
       fill="#333"
       d="M55.9 25.3c-2.4-5-3.9-9.8-4.7-12.6v35.5c1.2.5 2.1 1.6 2.1 3 0 1.8-1.5 3.3-3.3 3.3-1.8 0-3.3-1.5-3.3-3.3 0-1.5 1-2.7 2.3-3.1V12.7c-.8 2.8-2.2 7.6-4.7 12.6-3.8 7.8-8.6 14.6-8.6 14.6l3.1 41.8s2.9 3.2 11.3 3.2 11.3-3.2 11.3-3.2l3.1-41.8s-4.8-6.8-8.6-14.6z"
     />
+  </svg>
+);
+
+export const IconMixi2 = ({ size }: { size: number }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="104"
+    height="104"
+    viewBox="0 0 104 104"
+    fill="currentColor"
+  >
+    <path d="M0 16C0 7.16344 7.16344 0 16 0H88C96.8366 0 104 7.16344 104 16V88C104 96.8366 96.8366 104 88 104H16C7.16344 104 0 96.8366 0 88V16Z" fill="transparent" />
+    <path d="M85.8787 38.1987C79.0325 12.7915 59.2348 52.439 51.2771 30.3714C45.798 15.1814 23.2608 32.6205 17.8026 53.7801C14.6717 65.9123 20.777 73.6926 36.7706 63.345C49.4977 55.1107 57.3354 57.2136 55.9734 71.908C55.3681 78.4411 62.924 83.4505 74.0126 76.4791C86.5675 68.5892 89.6305 52.1572 85.8735 38.2039L85.8787 38.1987Z" />
   </svg>
 );
 
@@ -203,20 +230,21 @@ export const IconZenn = ({ size }: { size: number }) => (
 );
 
 const iconList: { [name: string]: (params: { size: number }) => JSX.Element } =
-  {
-    "amazon": IconAmazon,
-    "booth": IconBooth,
-    "fanbox": IconFanbox,
-    "github": IconGithub,
-    "hatenablog": IconHatenaBlog,
-    "mastodon": IconMastodon,
-    "misskey": IconMisskey,
-    "patreon": IconPatreon,
-    "threads": IconThreads,
-    "twitch": IconTwitch,
-    "twitter": IconTwitter,
-    "youtube": IconYouTube,
-    "zenn": IconZenn,
-  };
+{
+  "amazon": IconAmazon,
+  "booth": IconBooth,
+  "fanbox": IconFanbox,
+  "github": IconGithub,
+  "hatenablog": IconHatenaBlog,
+  "mastodon": IconMastodon,
+  "misskey": IconMisskey,
+  "mixi2": IconMixi2,
+  "patreon": IconPatreon,
+  "threads": IconThreads,
+  "twitch": IconTwitch,
+  "twitter": IconTwitter,
+  "youtube": IconYouTube,
+  "zenn": IconZenn,
+};
 
-export const getIcon = (name: string) => iconList[name];
+export const getIcon = (name: string) => iconList[name] ?? IconUser;

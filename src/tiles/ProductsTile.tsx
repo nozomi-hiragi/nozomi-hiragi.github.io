@@ -22,7 +22,7 @@ const ProductsTile = ({ products, colors }: { products: Product[], colors: Color
       align="center"
       justify="center"
     >
-      <ScrollArea w="100vw" h="100vh">
+      <ScrollArea w="100vw" h="100vh" scrollbars="y">
         <SimpleGrid
           w="100vw"
           px={{
@@ -32,7 +32,7 @@ const ProductsTile = ({ products, colors }: { products: Product[], colors: Color
             lg: 100,
             xl: 100,
           }}
-          py={50}
+          py={100}
           cols={{
             base: 1,
             sm: 2,

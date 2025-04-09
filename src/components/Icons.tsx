@@ -1,3 +1,5 @@
+import { JSX } from "react";
+
 export const IconAmazon = ({ size }: { size: number }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

@@ -15,7 +15,7 @@ export default function Home() {
         <AccountsTile accounts={profile.accounts} />
         <LanguagesTile languages={profile.languages} />
         <FrameworksTile frameworks={profile.frameworks} />
-        <ProductsTile products={profile.products} />
+        <ProductsTile products={profile.products} colors={profile.colors} />
         <LastTile />
       </Flex>
     </main>

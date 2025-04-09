@@ -24,6 +24,20 @@ type ProductLink = {
 export type Product = {
   name: string;
   description: string;
+  status: string;
+  note: string;
   tags?: string[];
   links?: ProductLink[];
 };
+
+export type Colors = {
+  status: {
+    [key: string]: string;
+  },
+  tags: {
+    [key: string]: {
+      text: string;
+      background: string;
+    };
+  }
+}

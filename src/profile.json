@@ -306,7 +306,9 @@
   "products": [
     {
       "name": "Yowatari",
-      "description": "VRChat world explorer",
+      "description": "Originally built as a VRChat world explorer. Currently being redesigned for a new use case.",
+      "note": "Discontinued after API changes. The name may live on in a future project.",
+      "status": "in-progress",
       "tags": [
         "React",
         "Deno",
@@ -324,13 +326,18 @@
     },
     {
       "name": "EbinaStation",
-      "description": "Server application manager",
+      "description": "A TypeScript API server manager for quick setup and development, built with Hono and Docker.",
+      "note": "Started as a personal API server manager built in TypeScript.",
+      "status": "paused",
       "tags": [
         "React",
         "Deno",
         "Next.js",
         "Mantine",
-        "TypeScript"
+        "TypeScript",
+        "Docker",
+        "Hono",
+        "Passkey"
       ],
       "links": [
         {
@@ -344,8 +351,22 @@
       ]
     },
     {
+      "name": "Flappy Chan",
+      "description": "A parody side-scroller mobile game inspired by Flappy Bird. Previously released on Google Play, but currently unavailable.",
+      "note": "Originally released on Google Play Store; currently unavailable due to account deletion. Considering re-release on an alternative platform.",
+      "status": "archived",
+      "tags": [
+        "Android",
+        "Godot",
+        "Game",
+        "AdMob"
+      ]
+    },
+    {
       "name": "TweetHistory",
-      "description": "Tweet archive viewing and grouping tool",
+      "description": "A tool I built for viewing and organizing my old tweets, aimed at personal archiving and cleanup.",
+      "note": "A tool I built to organize my tweet archive. You can import Twitter data, group posts, and hide tweets to tidy things up.",
+      "status": "in-progress",
       "tags": [
         "React",
         "Next.js",
@@ -365,7 +386,9 @@
     },
     {
       "name": "Tansaku",
-      "description": "Flutter Web demo",
+      "description": "A Flutter Web app for browsing anime titles using a public API.",
+      "note": "Created to experiment with Flutter Web. Planned to build an anime search interface using a free public API, but the project was paused early in development.",
+      "status": "paused",
       "tags": [
         "Flutter",
         "Dart"
@@ -383,7 +406,9 @@
     },
     {
       "name": "VRCMate",
-      "description": "VRChat friends status checker",
+      "description": "An Android app for checking VRChat friends' online status.",
+      "note": "Built with native Android to monitor VRChat friend activity. Distributed directly to a few users. Development is now discontinued.",
+      "status": "archived",
       "tags": [
         "Android",
         "Kotlin"
@@ -396,5 +421,74 @@
         }
       ]
     }
-  ]
+  ],
+  "colors": {
+    "status": {
+      "in-progress": "yellow",
+      "paused": "orange",
+      "archived": "red"
+    },
+    "tags": {
+      "AdMob": {
+        "text": "white",
+        "background": "#EA4335"
+      },
+      "Android": {
+        "text": "black",
+        "background": "#3DDC84"
+      },
+      "Dart": {
+        "text": "white",
+        "background": "#01579b"
+      },
+      "Deno": {
+        "text": "white",
+        "background": "black"
+      },
+      "Docker": {
+        "text": "white",
+        "background": "#1D63ED"
+      },
+      "Flutter": {
+        "text": "white",
+        "background": "#027DFD"
+      },
+      "Game": {
+        "text": "#00ffe1",
+        "background": "#0f0f3d"
+      },
+      "Godot": {
+        "text": "white",
+        "background": "#478cbf"
+      },
+      "Hono": {
+        "text": "white",
+        "background": "#e36002"
+      },
+      "Kotlin": {
+        "text": "white",
+        "background": "#c711e1"
+      },
+      "Mantine": {
+        "text": "white",
+        "background": "#0072FF"
+      },
+      "Next.js": {
+        "text": "black",
+        "background": "white"
+      },
+      "Passkey": {
+        "text": "#231f20",
+        "background": "#febd3e"
+      },
+      "React": {
+        "text": "black",
+        "background": "#61DAFB"
+      },
+      "TypeScript": {
+        "text": "white",
+        "background": "#007ACC"
+      }
+    }
+  }
 }

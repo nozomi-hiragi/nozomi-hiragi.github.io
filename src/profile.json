@@ -1,4 +1,19 @@
 {
+  "about": {
+    "title": "Software Developer｜Video Creator｜Streamer｜VTuber (sort of)",
+    "location": "Kanto, Japan",
+    "bio": "An independent creator focused on software development, video creation, and streaming. I work with TypeScript and Flutter to build web services and mobile apps. I'm also interested in learning English and Korean, accents and pronunciation, smartphones, XR, AI, and 3D modeling. I'm constantly exploring new ways to bring these interests together in everyday life.",
+    "bio_ja": "ソフトウェア開発、動画制作、配信を中心に活動している個人クリエイター。TypeScriptやFlutterを使いながら、Webサービスやスマホアプリの開発を進めている。英語や韓国語の学習、発音アクセント、スマートフォン、XR、AI、3Dモデリングなどへの関心も持ち、日々の暮らしの中で試行錯誤を続けている。",
+    "log": [
+      {
+        "date": "2025-04-13",
+        "status": "Most of my time goes into part-time work, so I don't have much space for personal projects.\nStill, I'm hoping to create something—maybe a service or an app—when I can.\nI have a few video projects sitting unedited, and I've been streaming games almost every day.",
+        "status_ja": "バイト中心の生活で、個人活動にはあまり時間を割けていない。\nそれでも限られた時間の中で、サービスやアプリのようなものを作ろうと考えている。\n編集できていない動画のストックもいくつかあり、ゲーム配信はほぼ毎日継続している。",
+        "currently": "I'm working on updating this site and hoping to get back to TweetHistory.\nI also want to edit and upload some travel and smartphone videos I've recorded.",
+        "currently_ja": "このサイトを整理しながら、TweetHistory を再開したいと思っている。\n旅行動画やスマホの動画も、編集して投稿したいと考えている。"
+      }
+    ]
+  },
   "accounts": [
     {
       "label": "ひいらぎのぞみ",
@@ -190,6 +205,20 @@
       "icon": "amazon",
       "url": "https://www.amazon.co.jp/registry/wishlist/RSOGC7R8DVLP/ref=cm_sw_r_cp_ep_ws_-Y-5Bb04SS5P4"
     }
+  ],
+  "interests": [
+    "Software Development",
+    "Video Editing",
+    "Streaming",
+    "Smartphones",
+    "Language Learning",
+    "Pronunciation",
+    "Accents",
+    "3D Modeling",
+    "Economics",
+    "Travel",
+    "AI",
+    "XR"
   ],
   "languages": [
     {

@@ -5,6 +5,18 @@ export type Account = {
   url: string;
 };
 
+export type About = {
+  avatar: string;
+  name: string;
+  name_ja: string;
+  name_ko: string;
+  bio: string;
+  bio_ja: string;
+  bio_ko: string;
+  interests: string[];
+  location: string;
+};
+
 export type Framework = {
   name: string;
   rate: number;

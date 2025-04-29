@@ -1,4 +1,28 @@
 {
+  "about": {
+    "avatar": "https://pbs.twimg.com/profile_images/1719729189186830336/xEFWOKfQ_400x400.jpg",
+    "name": "nozomi hiragi",
+    "name_ja": "ひいらぎのぞみ",
+    "name_ko": "히라기 노조미",
+    "bio": "Making software, videos, and streams, \nand exploring whatever comes next.",
+    "bio_ja": "ソフトウェア開発、動画制作、配信、\n次にやりたくなったこと。",
+    "bio_ko": "소프트웨어 개발, 영상 제작, 스트리밍, \n그리고 다음에 하고 싶어지는 것.",
+    "interests": [
+      "Software Development",
+      "Video Editing",
+      "Streaming",
+      "Smartphones",
+      "Language Learning",
+      "Pronunciation",
+      "Accents",
+      "3D Modeling",
+      "Economics",
+      "Travel",
+      "AI",
+      "XR"
+    ],
+    "location": "Kanto, Japan"
+  },
   "accounts": [
     {
       "label": "ひいらぎのぞみ",

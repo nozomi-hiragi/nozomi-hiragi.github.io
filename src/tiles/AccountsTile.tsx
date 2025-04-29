@@ -15,9 +15,9 @@ const AccountsTile = ({ accounts }: { accounts: Account[] }) => {
       justify="center"
     >
       <Group gap={50} style={{ flexWrap: "nowrap" }}>
-        {accounts.map((account) => (
+        {accounts.map((account, i) => (
           <RandomToolTip
-            key={account.label}
+            key={i + account.label}
             label={account.label}
           >
             <AccountActionIcon

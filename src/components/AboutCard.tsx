@@ -12,7 +12,7 @@ const langs = [
 ]
 
 const AboutCard = ({ about }: { about: About }) => {
-  const [value, setValue] = useState(window.navigator.language.split("-")[0] || "en");
+  const [value, setValue] = useState(((typeof window !== 'undefined') && window.navigator.language.split("-")[0]) || "en");
   const [emblaRef, seteEblaRef] = useState<EmblaCarouselType>()
 
   return (

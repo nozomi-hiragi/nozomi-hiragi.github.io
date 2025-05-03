@@ -7,7 +7,7 @@ const FrameworksTile = ({ frameworks }: { frameworks: Framework[] }) => {
       <ScrollArea h="100%" scrollbars="y">
         <Flex
           w="100vw"
-          mih="100vh"
+          mih="100dvh"
           align="center"
           justify="center"
         >

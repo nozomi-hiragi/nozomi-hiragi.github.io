@@ -11,7 +11,7 @@ import profile from "@/profile.json";
 export default function Home() {
   return (
     <main>
-      <Flex h="100vh" style={{ overflowX: "scroll" }}>
+      <Flex h="100dvh" style={{ overflowX: "scroll" }}>
         <NameTile />
         <AccountsTile accounts={profile.accounts} />
         <AboutTile about={profile.about} />

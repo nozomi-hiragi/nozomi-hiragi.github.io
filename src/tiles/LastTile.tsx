@@ -22,7 +22,7 @@ const IconWorld = (
 const LastTile = () => {
   return (
     <Flex
-      h="100vh"
+      h="100dvh"
       bg="#8d07ed"
       px={80}
       py={50}

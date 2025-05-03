@@ -7,7 +7,7 @@ import { Account } from "@/models";
 const AccountsTile = ({ accounts }: { accounts: Account[] }) => {
   return (
     <Flex
-      h="100vh"
+      h="100dvh"
       bg="gray.3"
       px={80}
       py={50}

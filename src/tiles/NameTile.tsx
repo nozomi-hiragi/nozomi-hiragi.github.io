@@ -16,7 +16,7 @@ const NameTile = () => {
         lg: "60vw",
         xl: "50vw",
       }}
-      h="100vh"
+      h="100dvh"
       justify="center"
       align="center"
       bg="violet.7"

@@ -8,7 +8,7 @@ const AboutTile = ({ about }: { about: About }) => {
       <ScrollArea h="100%" scrollbars="y">
         <Flex
           w="100vw"
-          mih="100vh"
+          mih="100dvh"
           py={20}
           align="center"
           justify="center"

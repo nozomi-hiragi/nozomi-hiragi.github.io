@@ -75,6 +75,15 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      - name: Setup Node for phone (Vite needs Node 20+)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Build phone sub-site
+        working-directory: ./phone
+        run: npm ci && npm run build
+      - name: Copy phone into out/phone
+        run: rm -rf ./out/phone && mkdir -p ./out/phone && cp -r ./phone/dist/. ./out/phone/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,0 +1,101 @@
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: #0b0820; color: #fff;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif; user-select: none; overscroll-behavior: none; }
+#os { position: fixed; left: var(--vvl, 0); top: var(--vvt, 0); width: var(--vvw, 100vw); height: var(--vvh, 100dvh); overflow: hidden; touch-action: none; }
+
+/* wallpaper */
+.wallpaper { position: absolute; inset: 0; background: linear-gradient(160deg, #8d07ed, #4b2bd6 55%, #0bb5c9); }
+.wallpaper canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+/* status bar */
+.statusbar { position: absolute; top: 0; left: 0; right: 0; height: calc(44px + env(safe-area-inset-top));
+  padding: env(safe-area-inset-top) 24px 0; display: flex; align-items: center; justify-content: space-between;
+  font-weight: 600; font-size: 15px; z-index: 90; pointer-events: none; text-shadow: 0 1px 2px rgba(0,0,0,.3); }
+.statusbar .icons { display: flex; gap: 6px; align-items: center; }
+.signal { display: flex; gap: 1.5px; align-items: flex-end; height: 11px; }
+.signal i { width: 3px; background: #fff; border-radius: 1px; }
+
+/* home */
+.home { position: absolute; inset: 0; padding-top: calc(56px + env(safe-area-inset-top)); transition: transform .35s, opacity .35s, filter .35s; }
+.home.behind { transform: scale(.92); opacity: .4; filter: blur(4px); }
+.pages { display: flex; height: calc(100% - 110px); will-change: transform; }
+.page { flex: 0 0 100%; display: grid; grid-template-columns: repeat(var(--cols), 1fr); grid-auto-rows: var(--row);
+  align-content: start; padding: 8px max(16px, calc(50% - 220px)); row-gap: 8px; }
+.empty-hint { grid-column: 1 / -1; margin-top: 30vh; text-align: center; opacity: .55; font-size: 14px; }
+.app-icon { display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; }
+.app-icon .glyph { width: 60px; height: 60px; border-radius: 16px; background: rgba(255,255,255,.88); display: grid; place-items: center;
+  font-size: 34px; box-shadow: 0 4px 12px rgba(0,0,0,.25); transition: transform .15s; overflow: hidden; }
+.app-icon .glyph img { width: 100%; height: 100%; object-fit: cover; }
+.app-icon:active .glyph { transform: scale(.9); }
+.app-icon .label { font-size: 12px; text-shadow: 0 1px 2px rgba(0,0,0,.5); max-width: 76px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dots { position: absolute; left: 0; right: 0; bottom: calc(118px + env(safe-area-inset-bottom)); display: flex; justify-content: center; gap: 8px; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.4); transition: background .2s; }
+.dots i.on { background: #fff; }
+.dock { position: absolute; left: 50%; transform: translateX(-50%); bottom: calc(24px + env(safe-area-inset-bottom));
+  width: min(calc(100% - 24px), 440px); height: 84px; border-radius: 28px; background: rgba(255,255,255,.2);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); display: flex; justify-content: space-around; align-items: center; }
+.dock .label { display: none; }
+
+/* app window */
+.app-window { position: absolute; inset: 0; background: #fff; color: #111; z-index: 30; border-radius: 0; overflow: hidden;
+  transform-origin: 0 0; display: flex; flex-direction: column; padding-top: calc(44px + env(safe-area-inset-top)); }
+.app-window .app-body { flex: 1; overflow: auto; touch-action: pan-y; padding: 16px; }
+.app-window.anim { transition: transform .38s cubic-bezier(.2,.9,.25,1), border-radius .38s, opacity .38s; }
+
+/* home indicator */
+.home-bar-zone { position: absolute; left: 0; right: 0; bottom: 0; height: calc(28px + env(safe-area-inset-bottom)); z-index: 60; cursor: grab; }
+.home-bar { position: absolute; left: 50%; bottom: calc(8px + env(safe-area-inset-bottom)); width: 134px; height: 5px; margin-left: -67px;
+  border-radius: 3px; background: rgba(255,255,255,.85); mix-blend-mode: difference; }
+
+/* lock screen */
+.lock { position: absolute; inset: 0; z-index: 80; display: flex; flex-direction: column; align-items: center;
+  padding-top: calc(90px + env(safe-area-inset-top)); background: rgba(10,5,30,.15); backdrop-filter: blur(2px); will-change: transform; }
+.lock.anim { transition: transform .4s cubic-bezier(.2,.9,.25,1), opacity .4s; }
+.lock .date { font-size: 18px; font-weight: 500; opacity: .9; }
+.lock .clock { font-size: 88px; font-weight: 700; letter-spacing: -2px; line-height: 1.05; }
+.lock .hint { position: absolute; bottom: calc(44px + env(safe-area-inset-bottom)); font-size: 14px; opacity: .75; animation: bob 2s infinite; }
+@keyframes bob { 50% { transform: translateY(-6px); opacity: .45; } }
+
+/* notification center (pull down from the status bar) */
+.nc { position: absolute; inset: 0; z-index: 70; background: rgba(10,5,30,.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  display: flex; flex-direction: column; transform: translateY(-100%); opacity: 0; }
+.nc.anim { transition: transform .35s cubic-bezier(.2,.9,.25,1), opacity .35s; }
+.nc.open { transform: none; opacity: 1; }
+.nc-date { font-size: 17px; opacity: .9; }
+.nc-clock { font-size: 72px; font-weight: 700; letter-spacing: -2px; }
+.nc-empty { margin-top: 40px; font-size: 14px; opacity: .6; }
+.nc-zone { position: absolute; top: 0; left: 0; right: 0; height: calc(44px + env(safe-area-inset-top)); z-index: 75; }
+.dead { position: absolute; inset: 0; z-index: 1000; background: #000; }
+.signal i.off { background: rgba(255,255,255,.3); }
+.signal.none { opacity: .6; }
+.toast { position: absolute; left: 50%; top: calc(56px + env(safe-area-inset-top)); transform: translate(-50%, -20px); z-index: 95;
+  padding: 10px 18px; border-radius: 20px; background: rgba(20,10,40,.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  font-size: 14px; font-weight: 600; opacity: 0; transition: opacity .3s, transform .3s; pointer-events: none; white-space: nowrap; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+/* iOS 16+ style battery: number inside the pill; filled part opaque, rest translucent */
+.battery { --level: 100%; position: relative; width: 27px; height: 13px; border-radius: 4.5px; margin-right: 3px;
+  background: rgba(255,255,255,.38); overflow: visible; display: inline-block; }
+.battery::after { content: ""; position: absolute; right: -3.5px; top: 4px; width: 2px; height: 5px; border-radius: 0 1.5px 1.5px 0; background: rgba(255,255,255,.45); }
+.battery .fill { position: absolute; inset: 0; width: var(--level); background: #fff; border-radius: 4.5px 0 0 4.5px; }
+.battery[style*="--level: 100%"] .fill { border-radius: 4.5px; }
+.battery .num { position: absolute; inset: 0; display: grid; place-items: center; font: 800 10.5px/1 system-ui, -apple-system, sans-serif;
+  letter-spacing: -.3px; color: #fff; text-shadow: none; font-variant-numeric: tabular-nums; }
+.battery .num.on-fill { color: rgba(20,12,45,.82); clip-path: inset(0 calc(100% - var(--level)) 0 0); }
+.battery.low .fill { background: #ff453a; }
+.battery.low .num.on-fill { color: #fff; }
+.nc-list { width: min(calc(100% - 24px), 420px); margin-top: 28px; display: flex; flex-direction: column; gap: 8px; }
+.nc-empty { text-align: center; }
+.notif { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 20px; cursor: pointer;
+  background: rgba(255,255,255,.22); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.notif-icon { width: 38px; height: 38px; flex: none; border-radius: 10px; background: rgba(255,255,255,.88); display: grid; place-items: center; font-size: 22px; }
+.notif-text { min-width: 0; }
+.notif-app { font-size: 11px; opacity: .7; text-transform: uppercase; letter-spacing: .3px; }
+.notif-title { font-size: 14px; font-weight: 700; }
+.notif-body { font-size: 13px; opacity: .9; }
+.app-icon { position: relative; }
+.badge { position: absolute; top: -6px; left: 50%; margin-left: 20px; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 11px;
+  background: #ff3b30; color: #fff; font-size: 13px; font-weight: 700; display: grid; place-items: center; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.nc-scroll { flex: 1; min-height: 0; overflow-y: auto; touch-action: pan-y; overscroll-behavior: contain;
+  display: flex; flex-direction: column; align-items: center; padding: calc(70px + env(safe-area-inset-top)) 0 12px; }
+.nc-handle { flex: none; height: 40px; display: grid; place-items: center; cursor: grab; touch-action: none; }
+.nc-handle i { width: 40px; height: 5px; border-radius: 3px; background: rgba(255,255,255,.7); }

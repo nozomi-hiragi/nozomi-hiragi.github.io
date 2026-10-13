@@ -1,0 +1,8 @@
+[
+  { "id": "n-about", "appId": "about", "title": "ようこそ", "body": "nozomi hiragi OS へようこそ。アプリを開くと電波が強くなります。" },
+  { "id": "n-zenn", "appId": "zenn", "title": "Zenn", "body": "技術記事はこちら" },
+  { "id": "n-github-1", "appId": "github", "title": "GitHub", "body": "公開リポジトリを見る" },
+  { "id": "n-github-2", "appId": "github", "title": "TweetHistory", "body": "ツイート整理ツールのリポジトリ", "stage": 2 },
+  { "id": "n-yt", "appId": "youtube", "title": "YouTube", "body": "チャンネルはこちら", "icon": "📺" },
+  { "id": "n-broken", "appId": "does-not-exist", "title": "skip me", "body": "invalid appId (demo of validation)" }
+]

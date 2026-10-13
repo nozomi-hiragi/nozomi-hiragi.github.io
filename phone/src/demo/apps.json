@@ -1,0 +1,8 @@
+[
+  { "id": "about", "name": "About", "icon": "🙂", "mode": "internal" },
+  { "id": "zenn", "name": "Zenn", "icon": "📘", "mode": "link", "url": "https://zenn.dev/nozomi_hiragi" },
+  { "id": "tweethistory", "name": "TweetHistory", "icon": "🐦", "mode": "link", "url": "https://nozomi-hiragi.github.io/TweetHistory/" },
+  { "id": "tansaku", "name": "Tansaku", "icon": "🔍", "mode": "link", "url": "https://nozomi-hiragi.github.io/Tansaku/" },
+  { "id": "github", "name": "GitHub", "icon": "🐙", "mode": "link", "url": "https://github.com/nozomi-hiragi", "dock": true },
+  { "id": "youtube", "name": "YouTube", "icon": "▶️", "mode": "link", "url": "https://www.youtube.com/@nozomi_hiragi_vt", "dock": true }
+]

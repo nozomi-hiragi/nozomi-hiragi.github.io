@@ -6,7 +6,9 @@ export const isDemo = new URLSearchParams(location.search).has("demo");
 
 /**
  * App registry.
- * - mode "link": opens `url` in a new tab.
+ * - mode "link": opens `url` outside the OS. `open` picks where (default "app"):
+ *     "app"     = new tab / in-app browser overlay (iOS installed PWA keeps it inside the PWA)
+ *     "browser" = hand off to the real browser (iOS installed PWA: x-safari- scheme -> Safari)
  * - mode "internal": opens an in-OS app window rendered by a view registered with `registerView(id, ...)`.
  * `dock: true` puts the app in the dock (max 4); others fill home pages in order.
  */
@@ -16,6 +18,7 @@ export type AppDef = {
   icon: string; // emoji, or image path (relative to /phone/ public dir) / URL
   mode: "link" | "internal";
   url?: string;
+  open?: "app" | "browser";
   dock?: boolean;
 };
 

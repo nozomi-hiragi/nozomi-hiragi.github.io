@@ -10,11 +10,13 @@ const HOUR = 3600_000;
 
 export class Battery {
   readonly max: number;
+  readonly updateDate: Date;
   private viewedMs: number;
   private lastTick = performance.now();
   onChange: (pct: number, dead: boolean) => void = () => {};
 
   constructor(updateDate = new Date(__UPDATE_DATE__), now = new Date()) {
+    this.updateDate = updateDate;
     const days = Math.max(0, Math.floor((now.getTime() - updateDate.getTime()) / 86400_000));
     this.max = Math.max(0, 100 - (days * 100) / 365);
     const dbg = Number(new URLSearchParams(location.search).get("battHours"));

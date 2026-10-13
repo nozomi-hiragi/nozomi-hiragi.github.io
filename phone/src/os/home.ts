@@ -1,6 +1,8 @@
 import { apps, AppDef } from "./apps";
 import { h, clamp } from "./util";
 import { vp } from "./viewport";
+import { onStableResize } from "./resize";
+import { navDebug } from "./debugNav";
 
 /** Home screen: paged icon grid (driven by apps.json) + dots + dock, with momentum swipe. */
 export class Home {
@@ -15,8 +17,7 @@ export class Home {
   constructor() {
     this.el.append(this.pagesEl, this.dotsEl, this.dockEl);
     this.layout();
-    window.addEventListener("resize", () => this.layout());
-    window.visualViewport?.addEventListener("resize", () => this.layout());
+    onStableResize(() => vp() && { w: vp().width, h: vp().height }, () => this.layout(), { delay: 150, minDh: 20 });
     this.bindSwipe();
   }
 
@@ -34,6 +35,7 @@ export class Home {
   }
 
   layout() {
+    navDebug.count("layout");
     const w = Math.min(vp().width, 480), hgt = vp().height - 56 - 200;
     const cols = w < 360 ? 3 : 4, row = 96, rows = Math.max(1, Math.floor(hgt / (row + 8)));
     const per = cols * rows;

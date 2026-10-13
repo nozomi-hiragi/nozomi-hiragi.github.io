@@ -45,5 +45,12 @@ export class Signal {
     return true;
   }
 
+  /** forget all opened apps (back to 1G / 0 bars) */
+  reset() {
+    this.opened.clear();
+    this.save();
+    this.onChange(this.state, false);
+  }
+
   private save() { localStorage.setItem(KEY, JSON.stringify([...this.opened])); }
 }
